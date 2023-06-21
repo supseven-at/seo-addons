@@ -1,0 +1,14 @@
+{
+  "name": "supseven/seo-addons",
+  "description": "Additional settings and default setup for EXT:seo",
+  "type": "typo3-cms-extension",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "typo3/cms-seo": "^11.5"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "seo_addons"
+    }
+  }
+}

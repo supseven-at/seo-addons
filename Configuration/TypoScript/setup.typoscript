@@ -1,0 +1,18 @@
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
+
+plugin.tx_seo.config.xmlSitemap.sitemaps {
+    pages.config.additionalWhere := appendString( AND {#tx_seoaddons_sitemap_exclude} = 0)
+
+    news {
+        provider = GeorgRinger\News\Seo\NewsXmlSitemapDataProvider
+        config {
+            pid =
+            url {
+                pageId =
+                fieldToParameterMap.uid = tx_news_pi1[news]
+                additionalGetParameters.tx_news_pi1.controller = News
+                additionalGetParameters.tx_news_pi1.action = detail
+            }
+        }
+    }
+}
