@@ -4,7 +4,7 @@
   "type": "typo3-cms-extension",
   "license": "GPL-3.0-or-later",
   "require": {
-    "typo3/cms-seo": "^11.5, ^12.4"
+    "typo3/cms-seo": "^11.5 || ^12.4"
   },
   "extra": {
     "typo3/cms": {
